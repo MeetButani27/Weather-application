@@ -1,0 +1,81 @@
+#divWeatherMain{
+    display: block;
+    border-radius: 10px;
+    width: 210px;
+    height: 230px;
+    margin: 0px auto;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(8,7,42,1) 75%, rgb(8, 10, 63) 100%);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.layout {
+    margin: 0px auto;
+    text-align: center;
+}
+
+.search {
+    margin-top: 50px;
+}
+
+.weatherWidgetRow{
+    display:block;
+    margin: 0px auto;
+    width: fit-content;
+}
+
+.search input{
+    font-size: 18px;
+    border: 1.1px solid black;
+    padding: 4.5px;
+    padding-left: 8px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.search button{
+    font-size: 18px;
+    padding: 3.9px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1.7px solid rgb(63, 52, 52);
+    border-radius: 8px;
+    background-color: rgb(121, 219, 79);
+}
+
+.search button:hover {
+    background-color: rgb(169, 169, 20);
+}
+
+
+.sun{
+    margin-top: 10px;
+    color: rgb(241, 241, 49);
+    filter: drop-shadow( 1px 1px 10px yellow);
+}
+
+.moon{
+    margin-top: 10px;
+    color: white;
+    filter: drop-shadow( 1px 1px 10px white);
+}
+
+.cloudDiv{
+    margin-top: -40px;
+}
+
+.cloud{
+    color: rgb(104, 175, 197);
+    filter: drop-shadow( 1px 1px 5px rgb(104, 175, 197));
+    animation-name: cloudMovement;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes cloudMovement{
+    from{margin-left: -55px;}
+    to{margin-left: 65px;}
+}
